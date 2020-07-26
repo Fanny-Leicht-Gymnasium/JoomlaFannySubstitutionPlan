@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <fieldset
+		name="substitutionPlan"
+		label="Substitutionplan Settings"
+		description="Settings for the substitution plan processor"
+	>
+        <field name="fileLocation_note" type="note" label="Locations of the pdf and txt files containing the substitutions plans for teachers and students Note: The pdf and txt MUST be in the same location, MUST have the same name and MUST end on .pdf/.txt!" />
+        <field 
+            name="fileLocation_s1"
+            type="text"
+            label="Path to the s1 pdf" 
+            description="Path to the files containing the substitution plan for students today (no ending)" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/sheute"
+        />
+        <field 
+            name="fileLocation_s2" 
+            type="text"
+            label="Path to the s2 pdf" 
+            description="Path to the files containing the substitution plan for students tomorrow (no ending)" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/smorgen"
+        />
+        <field 
+            name="fileLocation_t1" 
+            type="text"
+            label="Path to the t1 pdf" 
+            description="Path to the files containing the substitution plan for teachers today (no ending)" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/lheute"
+        />
+        <field 
+            name="fileLocation_t2" 
+            type="text"
+            label="Path to the t2 pdf" 
+            description="Path to the files containing the substitution plan for teachers tomorrow (no ending)" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/lmorgen"
+        />
+
+        <field name="accessLevelsNote" type="note" label="Access levels for the substitution plan" />
+        <field 
+            name="studentPlanAccess"
+            type="accesslevel"
+            label="Student plan access" 
+            description="Access level  required to access the students substitution plan" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/sheute"
+        />
+        <field 
+            name="teacherPlanAccess"
+            type="accesslevel"
+            label="Teacher plan access" 
+            description="Access level  required to access the teachers substitution plan" 
+            default="/srv/www/virtual/22609/www2.fanny-leicht.de/vhostdata/htdoc/static15/http.intern/sheute"
+        />
+    </fieldset>
+</config>
